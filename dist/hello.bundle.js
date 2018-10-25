@@ -93,7 +93,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const hello = () => {\r\n    console.log(\"hello webpack4 真香！\");\r\n}\r\n\r\nhello();\n\n//# sourceURL=webpack:///./src/hello.js?");
+var hello = function hello() {
+  console.log("hello webpack4 真香！");
+};
+
+hello();
 
 /***/ })
 

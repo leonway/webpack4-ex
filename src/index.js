@@ -1,5 +1,15 @@
-const greet = () => {
-    console.log("webpack4 真香！");
+
+async function getPosts() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+  console.log(response);
+  const data = await response.json();
+  return data;
 }
 
-greet();
+getPosts().then(posts => console.log(posts))
+
+Object.assign({})
+
+Array.from([1,2,3])
+
+new Promise(resolve => console.log('promise'))
